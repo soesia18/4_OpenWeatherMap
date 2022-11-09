@@ -24,7 +24,7 @@ public class Weather {
     private Clouds clouds;
 
     public static void main(String[] args) {
-        URI uri = URI.create("https://api.openweathermap.org/data/2.5/weather?q=Kaindorf%20an%20der%20Sulm&appid=f76fc912c1986b56ff6940c47c51186f&mode=xml");
+        URI uri = URI.create("https://api.openweathermap.org/data/2.5/weather?q=Kaindorf%20an%20der%20Sulm&appid=APP_KEY&mode=xml");
 
         Weather weather = JAXB.unmarshal(uri, Weather.class);
         System.out.println(weather);
